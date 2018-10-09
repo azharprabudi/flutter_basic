@@ -1,8 +1,6 @@
-# flutter_basic
+# flutter local push notification
 
-A new Flutter project.
+More documentation read here :
 
-## Getting Started
+https://pub.dartlang.org/packages/flutter_local_notifications
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
