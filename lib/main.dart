@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' show utf8, json;
+import 'version-api.dart';
 
 
 void main() => runApp(HomeScreen());
@@ -19,11 +20,15 @@ class HomeScreenState extends State<HomeScreen> {
   void _fetchVersionApi(BuildContext context) async {
     try {
       
-      var response = await http.get("https://api.payfazz.com/v2/products/verssion");
-      Map<String, dynamic> responseMap = json.decode(response.body);
+      /* manual serialize json, this method suitable for small application. But have to type more logic */
+      var response = await http.get("https://api.payfazz.com/v2/products/version");
+      var responseJSON = VersionAPI.fromJson(json.decode(response.body));
+
+      /* automaticly serialize json not yet */
+
 
       setState(() {
-        version = responseMap["version"].toString();
+        version = responseJSON.version.toString();
       });
     } catch(e) {
       Scaffold.of(context).showSnackBar(
