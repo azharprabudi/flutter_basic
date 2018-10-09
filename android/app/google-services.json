@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1075941031711",
+    "firebase_url": "https://findresto-c0728.firebaseio.com",
+    "project_id": "findresto-c0728",
+    "storage_bucket": "findresto-c0728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075941031711:android:490adcd52025fb8b",
+        "android_client_info": {
+          "package_name": "com.example.flutterbasic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075941031711-6b99j1cg3m44t8k03284i90dob31s3tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-x-r_PFeBSh25FUSgShITXFZBpui2g7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
